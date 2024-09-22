@@ -15,8 +15,8 @@ body {
   font-family: "Roboto", Arial, serif;
   line-height: 1.8;
   font-size: 16px;
-  background: #fff;
-  color: #848484;
+  background: #000;        /* Color de fondo negro */
+  color: #EEC2D6;          /* Color de texto rosa */
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -24,15 +24,26 @@ body.fh5co-offcanvas {
   overflow: hidden;
 }
 
+.fh5co-project img {
+  width: 100%;       /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto;      /* Mantiene la proporción original de la imagen */
+  object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+
+#fh5co-logo img {
+  width: 40%;   /* Ajusta al tamaño deseado */
+  height: auto;   /* Mantiene la proporción de la imagen */
+}
+
 a {
-  color: #2da9d7;
+  color: #EEC2D6; 
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #2da9d7 !important;
+  color: #E99ED6 !important;
 }
 a:active, a:focus {
   outline: none;
@@ -41,15 +52,21 @@ a:active, a:focus {
 p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 15px;
-  color: #848484;
+  color: #f0e4ea;
   font-family: "Roboto", Arial, serif;
 }
-
+p {
+  text-align: justify;
+}
 h1, h2, h3, h4, h5, h6 {
-  color: #212121;
+  color: #EEC2D6; 
   font-family: "Roboto", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
+}
+
+h1.mb0 {
+  font-family: 'Rock Salt', cursive; /* Aplica la fuente */
 }
 
 figure {
@@ -58,17 +75,17 @@ figure {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #2da9d7;
+  background: #EEC2D6;
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #2da9d7;
+  background: #EEC2D6;
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #2da9d7;
+  background: #EEC2D6;
 }
 
 #fh5co-header {
@@ -96,7 +113,7 @@ figure {
   font-size: 15px;
 }
 #fh5co-header nav ul li a {
-  color: #999999 !important;
+  color: #EEC2D6 !important;
   padding: 10px;
 }
 @media screen and (max-width: 480px) {
@@ -105,13 +122,13 @@ figure {
   }
 }
 #fh5co-header nav ul li a:hover, #fh5co-header nav ul li a:active, #fh5co-header nav ul li a:focus {
-  color: #000 !important;
+  color: #E99ED6 !important;
   text-decoration: none;
   outline: none;
 }
 #fh5co-header nav ul li.active a {
   text-decoration: line-through !important;
-  color: black !important;
+  color: #E99ED6 !important;
 }
 
 .fh5co-projects-feed, .footer-content {
@@ -138,13 +155,13 @@ figure {
 }
 .fh5co-projects-feed .fh5co-project > a h2 {
   font-size: 14px;
-  color: #999999;
+  color: #EEC2D6;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 .fh5co-projects-feed .fh5co-project > a:hover h2, .fh5co-projects-feed .fh5co-project > a:active h2, .fh5co-projects-feed .fh5co-project > a:focus h2 {
-  color: #000;
+  color: #E99ED6;
 }
 
 .masonry,
@@ -186,10 +203,10 @@ figure {
   margin-bottom: 20px;
 }
 .page-content .meta span {
-  color: #bfbfbf;
+  color: hsl(0, 43%, 99%);
 }
 .page-content .meta a {
-  color: #bfbfbf;
+  color: hsl(0, 43%, 99%);
 }
 .page-content .meta a:hover, .page-content .meta a:active, .page-content .meta a:focus {
   color: #000 !important;
@@ -204,24 +221,24 @@ figure {
 #fh5co-footer {
   float: left;
   width: 100%;
-  background: #ebebeb;
+  background: #000;       /* Fondo negro para el pie de página */
+  color: #EEC2D6;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  color: #999999;
 }
 #fh5co-footer a {
-  color: #bfbfbf;
+  color: #EEC2D6;
 }
 #fh5co-footer a:hover, #fh5co-footer a:active, #fh5co-footer a:focus {
-  color: #000 !important;
+  color: #E99ED6 !important;
 }
 #fh5co-footer .social {
   margin-top: 20px;
 }
 #fh5co-footer .social a {
   padding: 10px;
-  color: #999999 !important;
+  color: #EEC2D6 !important;
 }
 @media screen and (max-width: 480px) {
   #fh5co-footer .social a {
@@ -229,7 +246,7 @@ figure {
   }
 }
 #fh5co-footer .social a:hover, #fh5co-footer .social a:active, #fh5co-footer .social a:focus {
-  color: #000 !important;
+  color: #E99ED6 !important;
 }
 
 .square {
